@@ -6,4 +6,8 @@ const movieSelect = document.getElementById('movie');
 
 const ticketPrice = +movieSelect.nodeValue; // The + sign turns the string into an integer. We could also use parseInt()
 
-
+container.addEventListener('click', (e) => {
+  if (e.target.classList.contains('seat') && !e.target.classList.contains('occupied')) { // "If what we click on has a class that contains 'seat' and not 'occupied' "
+    e.target.classList.toggle('selected');
+  }
+})
