@@ -29,7 +29,7 @@ const updateSelectedCount = () => {
 }
 
 // Get data from local storage and populate the UI
-const populateUI = () => {
+function populateUI() {
   const selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'));
 
   if (selectedSeats !== null && selectedSeats.length > 0) {
@@ -37,7 +37,7 @@ const populateUI = () => {
       if (selectedSeats.indexOf(index) > -1) {
         seat.classList.add('selected');
       }
-    })
+    });
   }
 
   const selectedMovieIndex = localStorage.getItem('selectedMovieIndex');
@@ -50,9 +50,7 @@ const populateUI = () => {
 // Movie select event
 movieSelect.addEventListener('change', e => {
   ticketPrice = +e.target.value;
-
   setMovieData(e.target.selectedIndex, e.target.value);
-  
   updateSelectedCount();
 });
 
