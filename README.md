@@ -4,7 +4,7 @@ You can select a movie, and seats that are available. It will display the number
 The data is saved in the local storage so that it is not reset when the page is reloaded.
 
 ## Screenshots
-<img src="https://github.com/jatanassian/movie-seat-booking-js/blob/master/images/screenshot.png?raw=true" alt="View of the app" width="30%" height="30%"/>
+<img src="https://github.com/jatanassian/movie-seat-booking-js/blob/master/images/screenshot.png?raw=true" alt="View of the app" width="50%" height="50%"/>
 
 ## If you want to run this project locally
 1. Fork and clone this repository
