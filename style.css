@@ -33,6 +33,11 @@ body {
   appearance: none;
 }
 
+.container {
+  perspective: 1000px; /* Make the screen tilted */
+  margin-bottom: 30px;
+}
+
 .seat {
   background-color: #444451;
   height: 12px;
