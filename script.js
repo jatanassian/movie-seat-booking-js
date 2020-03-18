@@ -10,6 +10,10 @@ let ticketPrice = +movieSelect.value; // The + sign turns the string into an int
 const updateSelectedCount = () => {
   const selectedSeats = document.querySelectorAll('.row .seat.selected');
 
+  // Save the selected seats in the local storage
+  const seatsIndex = [...selectedSeats].map(seat => [...seats].indexOf(seat));
+  localStorage.setItem('selectedSeats', JSON.stringify(seatsIndex));
+
   const selectedSeatsCount = selectedSeats.length;
 
   count.innerText = selectedSeatsCount;
